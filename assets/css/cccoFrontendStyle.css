@@ -1,0 +1,89 @@
+/***********************
+FRONTEND STYLE
+***********************/
+
+/* Banner Styling */
+.ccco-banner,
+.ccco-noscript{
+  font-size:14px;
+  font-size:.875rem;
+
+  position: fixed;
+  left:0;
+  bottom:0;
+  z-index:999999;
+}
+
+.ccco-bannertype-blocking.ccco-banner,
+.ccco-bannertype-blocking.ccco-noscript{
+  background-color: rgba(0,0,0,.5);
+  top:0;
+  right:0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ccco-banner .ccco-banner-inner,
+.ccco-noscript .ccco-noscript-inner{
+  border-radius: 5px;
+  max-width:600px;
+  padding:12px;
+  margin:12px;
+  text-align: center;
+}
+.ccco-banner .ccco-banner-buttons > a:not([data-ccco="accept"]),
+.ccco-noscript .ccco-noscript-buttons > a:not([data-ccco="accept"]),
+.ccco-inline-container .ccco-inline-link{
+  display: block;
+  padding:5px;
+  text-decoration: none !important;
+}
+.ccco-banner .ccco-banner-buttons > a:not([data-ccco="accept"]):hover,
+.ccco-noscript .ccco-noscript-buttons > a:not([data-ccco="accept"]):hover,
+.ccco-inline-container .ccco-inline-link:hover,
+.ccco-banner .ccco-banner-buttons > a:not([data-ccco="accept"]):focus,
+.ccco-noscript .ccco-noscript-buttons > a:not([data-ccco="accept"]):focus,
+.ccco-inline-container .ccco-inline-link:focus,
+.ccco-banner .ccco-banner-buttons > a:not([data-ccco="accept"]):active,
+.ccco-noscript .ccco-noscript-buttons > a:not([data-ccco="accept"]):active,
+.ccco-inline-container .ccco-inline-link:active{
+  text-decoration: underline;
+}
+.ccco-banner .ccco-banner-buttons > a[data-ccco="accept"],
+.ccco-inline-container .ccco-inline-button,
+.ccco-inline-appendbutton{
+  display: block;
+  padding:8px;
+  border-radius: 5px;
+  margin:20px auto 15px auto;
+  text-decoration: none !important;
+  transition: .3s;
+}
+.ccco-banner .ccco-banner-buttons > a[data-ccco="accept"]:hover,
+.ccco-banner .ccco-banner-buttons > a[data-ccco="accept"]:focus,
+.ccco-banner .ccco-banner-buttons > a[data-ccco="accept"]:active,
+.ccco-inline-container .ccco-inline-button:hover,
+.ccco-inline-container .ccco-inline-button:focus,
+.ccco-inline-container .ccco-inline-button:active,
+.ccco-inline-appendbutton:hover,
+.ccco-inline-appendbutton:focus,
+.ccco-inline-appendbutton:active{
+  opacity:.85;
+}
+
+/* Revoke Button Styling */
+.ccco-revoke-button{
+  display: block;
+  text-decoration: none !important;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* Inline Script Styling */
+.ccco-inline-container.ccco-inline-warning{
+  border: 1px solid;
+  border-radius: 5px;
+  padding:10px;
+}
